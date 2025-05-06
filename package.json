@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "packageManager": "pnpm@9.15.4",
   "scripts": {
-    "publish": "pnpm publish packages/kit --access public",
-    "publish:dry": "pnpm publish packages/kit --access public --dry-run --report-summary"
+    "build": "pnpm --filter @skgn/kit run build",
+    "publish": "pnpm build && pnpm publish packages/kit --access public",
+    "publish:dry": "pnpm build && pnpm publish packages/kit --access public --dry-run --report-summary"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
