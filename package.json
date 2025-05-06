@@ -3,6 +3,10 @@
   "type": "module",
   "version": "1.0.0",
   "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "build": "pnpm --filter @skgn/kit run build",
+    "publish": "pnpm --filter @skgn/kit publish --access public"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
     "eslint": "catalog:",
