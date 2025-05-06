@@ -1,0 +1,11 @@
+{
+  "name": "@skgn/kit-monorepo",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.15.4",
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-format": "catalog:"
+  }
+}
