@@ -55,3 +55,7 @@ export function isEmpty<T extends Record<string, unknown> | unknown[] | string |
   }
   throw new Error('Element is not Object nor Array not string');
 }
+
+export function isClient(): boolean {
+  return isDefined(window);
+}
